@@ -6,7 +6,7 @@ let states = document.querySelector('#states');
         })
         .then(statesFormated => {
             for(i = 0; i <= statesFormated.length; i++){
-                states.innerHTML += '<ul>' + statesFormated[i].nome;
+                states.innerHTML += '<li>' + statesFormated[i].nome;
             };
         })
         .catch(error => console.log(error));
